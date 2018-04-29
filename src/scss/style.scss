@@ -403,58 +403,125 @@ body {
 }
 
 .contacts {
-	h1 {
-		font-weight: 300;
-		font-size: 30px;
-		color: white;
-		margin-bottom: 33px;
+	height: 100vh;
+	.up {
+		margin-bottom: 125px;
 	}
-	.left {
-		display: flex;
-		.address {
-			text-align: left;
-			h3 {
-				font-weight: 900;
-				font-size: 20px;
-				color: #c0dfda;
-				margin-bottom: 22px;
+	.down {
+		text-align: left;
+		justify-content: space-between;
+		h1 {
+			font-weight: 300;
+			font-size: 30px;
+			color: white;
+			margin-bottom: 33px;
+		}
+		.left {
+			max-width: 500px;
+			width: 100%;
+			.address {
+				display: flex;
+				
+				justify-content: space-between;
+
+				h3 {
+					font-weight: 900;
+					font-size: 20px;
+					color: #c0dfda;
+					margin-bottom: 22px;
+				}
+				p {
+					font-size: 16px;
+					color: white;
+					line-height: 21px;
+				}
+				span {
+					color: #d0efea;
+				}
+				.text {
+					.phone {
+						margin-top: 60px;
+						display: flex;
+						line-height: 21px;
+						span {
+							margin-right: 25px;
+						}
+					}
+				}
 			}
-			p {
-				font-size: 16px;
-				color: white;
-			}
-			span {
-				color: #d0efea;
+		}
+		.right {
+			form {
+				text-align: center;
+				input {
+					background: #68a097;
+					border: 0;
+				}
+				.name {
+					margin-bottom: 20px;
+					input {
+						width: 260px;
+						height: 40px;
+						border-radius: 3px;
+					}
+					.surname {
+						margin-left: 20px;
+					}
+				}
+				.textarea {
+					width: 100%;
+					height: 160px;
+				}
+				.submit {
+					width: 260px;
+					height: 50px;
+					background: #df5c64;
+					color: #fff;
+					margin-top: 30px;
+				}
 			}
 		}
 	}
-	.right {
-		form {
-			input {
-				background: #68a097;
-				border: 0;
-			}
-			.name {
-				margin-bottom: 20px;
-				input {
-					width: 260px;
-					height: 60px;
-					border-radius: 3px;
+	.footer {
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		width: 100%;
+		height: 150px;
+		background: #68a097;
+		margin: auto 0 0 0;
+		ul {
+			li {
+				display: inline-block;
+				margin-left: 40px;
+
+				a {
+					font-size: 30px;
+					display: block;
+					width: 63px;
+					height: 63px;
+					background: #82c8bd;
+					border-radius: 50% 50%;
+					color: white;
+					padding-top: 17px;
+					box-sizing: border-box;
 				}
-				.surname {
-					margin-left: 20px;
-				}
 			}
-			.textarea {
-				width: 100%;
-				height: 160px;
-			}
-			.submit {
-				width: 260px;
-				height: 50px;
-				background: #df5c64;
-				color: #fff;
-			}
+		}
+		.user-social li:hover:nth-child(1) a {
+			background: #4f689e;
+		}
+
+		.user-social li:hover:nth-child(2) a {
+			background: #74c7d5;
+		}
+
+		.user-social li:hover:nth-child(3) a {
+			background: #df5c64;
+		}
+
+		.user-social li:hover:nth-child(4) a {
+			background: #3e61af;
 		}
 	}
 }
